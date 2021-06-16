@@ -8,7 +8,7 @@ const Success = ({ styles, isSuccessOpen, setIsSuccessOpen }) => {
     const [isLoading, setIsLoading] = useState(true)
 
     return (
-        <Overlay isVisible={!isSuccessOpen}>
+        <Overlay isVisible={isSuccessOpen}>
             <StatusBar hidden={isSuccessOpen} />
             {
                 isLoading ?
