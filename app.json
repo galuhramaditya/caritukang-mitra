@@ -1,0 +1,12 @@
+{
+  "name": "caritukang-mitra",
+  "displayName": "caritukang-mitra",
+  "expo": {
+    "name": "caritukang-mitra",
+    "slug": "caritukang-mitra",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
