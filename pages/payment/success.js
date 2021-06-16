@@ -12,7 +12,7 @@ const Success = ({ styles, isSuccessOpen, setIsSuccessOpen }) => {
             <StatusBar hidden={isSuccessOpen} />
             {
                 isLoading ?
-                    <View onTouchStart={() => setTimeout(() => setIsLoading(false), 10000)}>
+                    <View onTouchStart={() => setTimeout(() => setIsLoading(false), 5000)}>
                         <ActivityIndicator size="large" color="black" />
                         <Text style={{ marginTop: 20 }}>Waiting for the payment...</Text>
                     </View>

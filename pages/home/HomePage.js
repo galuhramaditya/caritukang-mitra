@@ -12,11 +12,11 @@ const HomePage = () => {
     return (
         <View style={{ flex: 1 }}>
             <StatusBar style="light" />
-            <ScrollView style={{ flex: 1 }} onTouchStart={() => setTimeout(() => setIsSheetOpen(true), 10000)}>
+            <ScrollView style={{ flex: 1 }}>
                 <Banner />
                 <LastTransaction />
             </ScrollView>
-            <BottomNavigation />
+            <BottomNavigation setIsSheetOpen={setIsSheetOpen} />
             <Sheet isSheetOpen={isSheetOpen} setIsSheetOpen={setIsSheetOpen} />
         </View>
     )

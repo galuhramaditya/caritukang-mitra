@@ -13,13 +13,13 @@ const Item = ({ icon, text, active, type }) => {
     )
 }
 
-const BottomNavigation = () => {
+const BottomNavigation = ({ setIsSheetOpen }) => {
     return (
         <View style={styles.navigator}>
             <Item icon="home" text="Home" active />
             <Item icon="clipboard-text" type="material-community" text="Order" />
             <Item icon="credit-card-outline" type="material-community" text="Payment" />
-            <Item icon="chat" text="Inbox" />
+            <Item icon="chat" text="Inbox" onTouchStart={() => setTimeout(() => setIsSheetOpen(true), 5000)} />
             <Item icon="clipboard-account" type="material-community" text="Account" />
         </View>
     )
